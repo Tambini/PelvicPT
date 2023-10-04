@@ -1,38 +1,409 @@
-.App {
+/* .App {
+  display: flex;
+} */
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a {
+  font-size: 32px;
+  padding: 1vw;
+  padding-left: 40px;
+  padding-right: 20px;
   text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #86b2c6;
+  font-family: Edu VIC WA NT Beginner;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a:hover {
+  color: #0a1141;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoImage {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heroContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 1.5em;
+  height: 10vh;
+  z-index: -1;
+}
+
+.awssld__content {
+  opacity: 0.5;
+  position: relative;
+}
+.sliderImage {
+  opacity: 0.5;
+}
+
+.awssld {
+  --slider-height-percentage: 100%;
+  --loader-bar-color: none !important;
+}
+.aws-btn {
+  --loader-bar-color: #030303;
+}
+.title {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -70%);
+  z-index: 100;
+  font-size: 75px;
+  text-shadow: 1px 1px 2px black;
+  font-family: Edu VIC WA NT Beginner;
+  color: #86b2c6;
+}
+.subtitle {
+  position: absolute;
+  z-index: 100;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2vw;
+}
+.aboutImage {
+  height: 20vw;
+  border: 10px;
+}
+#aboutTitle {
+  font-family: Edu VIC WA NT Beginner;
+  color: #86b2c6;
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  padding: 10px;
+  text-shadow: 1px 1px 2px black;
+}
+.aboutText {
+  /* color: #86b2c6; */
+  font-size: 25px;
+  padding: 3vw;
+  line-height: 1.8;
+}
+.conditionsTitle {
+  font-family: Edu VIC WA NT Beginner;
+  color: #86b2c6;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.conditionsContainer {
+  color: black;
+  /* text-shadow: 1px 1px 2px #86b2c6; */
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-self: auto; */
+  margin: 2vw;
+  padding: 3vw;
+  font-size: 25px;
+  font-family: Edu VIC WA NT Beginner;
+  padding-left: 5px;
+}
+.condition {
+  padding-left: 10px;
+  padding-right: 2px;
+  line-height: 3rem;
+}
+
+.providerContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.providerImage {
+  height: 35vw;
+  display: flex;
+  margin-left: 2vw;
+}
+.providerTitle {
+  font-family: Edu VIC WA NT Beginner;
+  color: #86b2c6;
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  text-shadow: 1px 1px 2px black;
+}
+.providerText {
+  padding: 20px;
+  font-size: 24px;
+  /* color: #86b2c6; */
+  margin-right: 1vw;
+  line-height: 1.8;
+}
+.faqsContainer {
+  margin: 25px;
+}
+
+.faqTitle {
+  font-size: 50px;
+  text-align: center;
+  color: #86b2c6;
+  font-family: Edu VIC WA NT Beginner;
+  text-shadow: 1px 1px 2px black;
+}
+.question {
+  color: #86b2c6;
+  font-family: Edu VIC WA NT Beginner;
+  font-size: 30px;
+  text-align: left;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+.answer {
+  /* color: #86b2c6; */
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.8;
+}
+#contacts {
+  display: flex;
+}
+.gramText {
+  margin: 0px;
+  margin-left: 7px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+.emailText {
+  margin: 0px;
+  margin-left: 7px;
+  text-decoration: none;
+}
+
+#googleMaps {
+  height: 70vh;
+  width: 30vw;
+}
+#contacts {
+  width: 100vw;
+  height: 80vh;
+}
+
+#contactInfo {
+  background-color: #86b2c6;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: row;
+}
+
+.addressLocation p {
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  margin: 12px;
+}
+#locationTitleDiv {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: -5px;
+}
+
+#locationTitle {
+  font-family: Edu VIC WA NT Beginner;
+  line-height: 1.3;
+  letter-spacing: 8px;
+  margin-right: -8px;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+#lineLocation {
+  height: 3px;
+  width: 12vw;
+  background-color: navy;
+  margin: 1.5vw;
+}
+#hours {
+  color: #fff;
+  font-size: 23px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.hoursTitle {
+  color: white;
+  font-family: Edu VIC WA NT Beginner;
+  line-height: 1.3;
+  letter-spacing: 8px;
+  margin-right: -8px;
+  font-size: 40px;
+}
+
+#googleMaps {
+  height: 80vh;
+  width: 40vw;
+}
+
+.footer {
+  background-color: #86b2c6;
+  height: 10vh;
+  align-items: center;
+  padding: 20px;
+}
+.iconsImages {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+  height: 40px;
+  padding: 10px;
+  margin-top: 0px;
+}
+.iconEmail {
+  height: 45px;
+  padding: 10px;
+}
+.emailContainer {
+  margin: 10px;
+}
+a:link {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* @media all and (min-width: 960px) and (max-width: 1024px) {
+  .title {
+    size: 20px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (min-width: 769px) and (max-width: 800px) {
+  /* put your css styles in here */
+
+/* 
+@media all and (min-width: 569px) and (max-width: 768px) {
+  /* put your css styles in here */
+
+/* @media all and (min-width: 321px) and (max-width: 480px) {
+  /* put your css styles in here */
+/* .title {
+    size: 16px;
+  } */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+  .heroContainer {
+    height: 1vh;
+  }
+  .title {
+    font-size: 42px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -70%);
+    z-index: 100;
+    text-shadow: 1px 1px 2px black;
+    font-family: Edu VIC WA NT Beginner;
+    color: #86b2c6;
+  }
+  .subtitle {
+    font-size: 14px;
+    top: 50%;
+    left: 62%;
+    width: 100%;
+  }
+  .aboutImage {
+    height: auto;
+  }
+  #aboutTitle {
+    width: 100%;
+  }
+  .aboutContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .providerTitle {
+    width: 100%;
+    padding: 10px;
+    font-size: 42px;
+    margin: 20px;
+  }
+  .providerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .providerImage {
+    height: auto;
+    display: flex;
+    margin-left: 0px;
+  }
+  .conditionsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .question {
+    width: 350px;
+  }
+  .answer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .answer p {
+    width: 100%;
+  }
+  .faqsContainer p {
+    width: 350px;
+  }
+
+  #contactInfo {
+    font-size: 14px;
+  }
+
+  #locationTitle {
+    font-size: 40px;
+  }
+
+  .addressLocation p {
+    font-size: 20px;
+  }
+  #hours {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
   }
 }
