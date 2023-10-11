@@ -292,8 +292,12 @@
 .emailContainer {
   margin: 10px;
 }
-a:link {
+
+.iconsImages a:link {
   text-decoration: none;
+  color: white;
+}
+.iconsImages a:visited {
   color: white;
 }
 
