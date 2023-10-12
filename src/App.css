@@ -10,6 +10,9 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+NavBar {
+  justify-content: center;
+}
 
 .navbar a {
   font-size: 32px;
@@ -181,17 +184,12 @@
 }
 #contacts {
   display: flex;
+  background-color: #86b2c6;
 }
-.gramText {
+
+.iconText {
   margin: 0px;
-  margin-left: 7px;
-  text-decoration: none;
-  color: white;
-  margin-top: 10px;
-}
-.emailText {
-  margin: 0px;
-  margin-left: 7px;
+  /* margin-left: 7px; */
   text-decoration: none;
 }
 
@@ -201,7 +199,8 @@
 }
 #contacts {
   width: 100vw;
-  height: 80vh;
+  /* height: 130vh; */
+
 }
 
 #contactInfo {
@@ -220,7 +219,7 @@
   letter-spacing: 5px;
   text-align: center;
   color: white;
-  margin: 12px;
+  margin: 8px;
 }
 #locationTitleDiv {
   font-size: 45px;
@@ -266,8 +265,9 @@
 }
 
 #googleMaps {
-  height: 80vh;
-  width: 40vw;
+  padding-top: 4%;
+  height: 50vh;
+  width: 30vw;
 }
 
 .footer {
@@ -277,8 +277,16 @@
   padding: 20px;
 }
 .iconsImages {
-  display: flex;
+  display: flex-box;
   justify-content: center;
+  margin: auto;
+}
+.iconsImages a:link {
+  text-decoration: none;
+  color: white;
+}
+.iconsImages a:visited {
+  color: white;
 }
 .icon {
   height: 40px;
@@ -293,12 +301,14 @@
   margin: 10px;
 }
 
-.iconsImages a:link {
-  text-decoration: none;
-  color: white;
+.socialRow {
+  display: inline-flex;
+  justify-content: center;
 }
-.iconsImages a:visited {
+.contactForm {
+  display: flex;
   color: white;
+  padding: auto;
 }
 
 /* @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -321,9 +331,9 @@
   } */
 
 @media only screen and (max-width: 600px) {
-  .navbar {
+  /* .navbar {
     display: block;
-  }
+  } */
   .heroContainer {
     height: 1vh;
   }
