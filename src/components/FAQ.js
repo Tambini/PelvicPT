@@ -31,7 +31,7 @@ const Services = () => {
         We offer 60 minute treatment sessions working 1:1 with your physical
         therapist.
       </p>
-      <h1 className="question"> Do you take insurance? </h1>
+      <h1 className="question">Do you take insurance? </h1>
       <p className="answer">
         I have decided to not participate with insurance companies. This allows
         me to offer private one hour sessions specifically tailored to your

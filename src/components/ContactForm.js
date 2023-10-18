@@ -13,7 +13,7 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_vsrzqil",
+        "service_faz6mv5",
         "template_u477hvd",
         form.current,
         "MYn900EZEf24S644G"
@@ -52,7 +52,7 @@ const ContactForm = () => {
           <Form.Group>
             <Form.Label>Select treatment</Form.Label>
             <Form.Select name="topic_selected">
-              <option disabled>Select a treatment</option>
+              <option menu>Select a treatment</option>
               {conditions.map((condition, i) => (
                 <option>{condition}</option>
               ))}
