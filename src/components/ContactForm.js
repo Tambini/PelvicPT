@@ -6,6 +6,7 @@ import { conditions } from "../components/ConditionsTreated.js";
 
 const ContactForm = () => {
   const form = useRef();
+  // boolean now, but we should add error and pending states
   const [formSubmitState, updateFormState] = useState(false);
 
   const sendEmail = (e) => {
@@ -71,7 +72,10 @@ const ContactForm = () => {
         </Form>
       )} 
       { formSubmitState === true &&
-        <center><h3 style={{padding: "auto"}}>Contact form submitted! Thank you.</h3></center>
+        <div className="successMessage">
+          <h3 style={{padding: "auto"}}>Thank you!</h3>
+          <p>Your message has been successfully submitted. Please try the below options if you do not hear back from us.</p>
+        </div>
       }
     </Container>
   );
