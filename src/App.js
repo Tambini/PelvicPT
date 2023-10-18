@@ -14,8 +14,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
-        {/* <NavbarV2/> */}
+        {/* <Navbar /> */}
+        <NavbarV2/>
         <Home />
         <About />
         <Provider />

@@ -38,11 +38,10 @@ const About = () => {
     <div>
       <h1 className="conditionsTitle" id="conditionsTreated">Conditions Treated</h1>
       <Container className="conditionsContainer">
-          <Row xs={1} md={3} lg={4}>
+          <Row xs={1} md={2} lg={4}>
         {conditions.map((condition, i) => 
           <Col>
           <ListGroup.Item key={i} className="condition">{condition}</ListGroup.Item>
-          {/* <li key={i} className="condition">{condition}</li> */}
           </Col>
         )}
         </Row>

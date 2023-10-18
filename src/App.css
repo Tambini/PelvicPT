@@ -2,7 +2,6 @@
   display: flex;
 } */
 .navbar {
-  height: 10vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -14,16 +13,20 @@ NavBar {
   justify-content: center;
 }
 
+.nav-link {
+  font-size: 5;
+}
+
 .navbar a {
-  font-size: 32px;
+  /* font-size: 32px;
   padding: 1vw;
   padding-left: 40px;
   padding-right: 20px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none; */
   font-weight: bolder;
   color: #86b2c6;
-  font-family: Edu VIC WA NT Beginner;
+  /* font-family: Edu VIC WA NT Beginner; */
 }
 
 .navbar a:hover {
@@ -123,7 +126,7 @@ NavBar {
   /* align-self: auto; */
   margin: 2vw;
   padding: 3vw;
-  font-size: 25px;
+  font-size: 20px;
   font-family: Edu VIC WA NT Beginner;
   padding-left: 5px;
 }
@@ -131,6 +134,9 @@ NavBar {
   padding-left: 10px;
   padding-right: 2px;
   line-height: 3rem;
+}
+.condition:hover {
+  opacity: 70%;
 }
 
 .providerContainer {
@@ -172,13 +178,13 @@ NavBar {
 .question {
   color: #86b2c6;
   font-family: Edu VIC WA NT Beginner;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
   text-shadow: 0.5px 0.5px 0.5px black;
 }
 .answer {
   /* color: #86b2c6; */
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   line-height: 1.8;
 }
