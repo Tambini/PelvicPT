@@ -51,14 +51,16 @@ const ContactForm = () => {
             />
           </Form.Group>
           <Form.Group>
-            <Form.Label>Select treatment</Form.Label>
+            {/* <Form.Label>Select treatment</Form.Label>
             <Form.Select name="topic_selected">
               <option menu>Select a treatment</option>
               {conditions.map((condition, i) => (
                 <option>{condition}</option>
               ))}
               <option>Other</option>
-            </Form.Select>
+            </Form.Select> */}
+            <Form.Label>Subject</Form.Label>
+            <Form.Control type="text" name="subject" />
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message</Form.Label>
